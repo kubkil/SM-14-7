@@ -1,0 +1,53 @@
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+}
+
+.contactsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.contactItem {
+  margin: 5% 0 5% 0;
+}
+
+.contactItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  margin: 0 1% 0 1%;
+}
+
+button[type=submit] {
+  font-family: inherit;
+  margin-top: 2%;
+}
