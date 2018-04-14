@@ -6,8 +6,8 @@
   "scripts": {
     "server": "http-server",
     "build": "npm-run-all -p build:*",
-    "build:js": "npx babel script.js -w --out-file script-compiled.js -s",
-    "build:lib": "npx babel components -w --out-dir components-lib -s"
+    "build:js": "babel script.js -w --out-file script-compiled.js -s",
+    "build:lib": "babel components -w --out-dir components-lib -s"
   },
   "repository": {
     "type": "git",
