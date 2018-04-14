@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm-run-all -p build:*",
     "build-js": "npx babel script.js --watch --out-file script-compiled.js",
-    "build-lib": "npx babel components --watch --out-file components-lib"
+    "build-lib": "npx babel components --watch --out-dir components-lib"
   },
   "repository": {
     "type": "git",
