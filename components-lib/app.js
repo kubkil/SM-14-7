@@ -24,7 +24,25 @@ var contactForm = {
 };
 
 var App = React.createClass({
+  displayName: 'App',
   render: function render() {
-    return React.createElement('div', { className: 'app' }, React.createElement(ContactForm, { contact: contactForm }), React.createElement(Contacts, { items: contacts }, {}));
+    return React.createElement(
+      'div',
+      { className: 'app' },
+      React.createElement(ContactForm, { contact: contactForm }),
+      React.createElement(Contact, { items: contacts })
+    );
   }
 });
+
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div className='app'>
+//         <ContactForm contact={contactForm} />
+//         <Contact items={contacts} />
+//       </div>
+//     );
+//   }
+// }
+//# sourceMappingURL=app.js.map
