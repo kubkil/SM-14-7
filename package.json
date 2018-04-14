@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx babel script.js --watch --out-file script-compiled.js"
+    "build": "npm-run-all -p build:*",
+    "build-js": "npx babel script.js --watch --out-file script-compiled.js",
+    "build-lib": "npx babel components --watch --out-file components-lib"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/kubkil/SM-14-7#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "npm-run-all": "^4.1.2"
   }
 }
